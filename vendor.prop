@@ -224,6 +224,9 @@ vendor.pasr.activemode.enabled=true
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
+# Perf
+ro.vendor.extension_library=libqti-perfd-client.so
+
 # Radio
 ro.telephony.default_network=33,33
 persist.vendor.radio.apm_sim_not_pwdn=1
