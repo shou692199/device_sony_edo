@@ -5239,6 +5239,7 @@ case "$target" in
 	# cpuset parameters
 	echo 0-3 > /dev/cpuset/background/cpus
 	echo 0-3 > /dev/cpuset/system-background/cpus
+	echo 0-6 > /dev/cpuset/foreground/cpus
 
 	# Turn off scheduler boost at the end
 	echo 0 > /proc/sys/kernel/sched_boost
@@ -5354,9 +5355,9 @@ case "$target" in
 		echo 0 > /sys/devices/virtual/npu/msm_npu/pwr
 	    done
 	done
-        # memlat specific settings are moved to seperate file under
-        # device/target specific folder
-        setprop vendor.dcvs.prop 0
+	# memlat specific settings are moved to seperate file under
+	# device/target specific folder
+	setprop vendor.dcvs.prop 0
 	setprop vendor.dcvs.prop 1
     echo N > /sys/module/lpm_levels/parameters/sleep_disabled
     configure_memory_parameters
