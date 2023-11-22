@@ -525,5 +525,8 @@
         <item>-0.4376923077</item>
     </string-array>
 
+    <!-- Led color when battery is medium charged -->
+    <integer name="config_notificationsBatteryMediumARGB">0xFFFF8C00</integer>
+
 </resources>
 

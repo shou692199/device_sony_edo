@@ -44,7 +44,7 @@ TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_VARIANT := cortex-a76
 
 TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv8-a
+TARGET_2ND_ARCH_VARIANT := armv8-2a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a76
@@ -148,7 +148,7 @@ TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(COMMON_PATH)/framework_compatibility_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    vendor/aosp/config/device_framework_matrix.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 
@@ -173,9 +173,9 @@ BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_SOMC_DYNAMIC_PARTITIONS_PARTITION_LIST := product system vendor odm
 # Dynamic partition size = (Super partition size / 2) - 4MB
-BOARD_SOMC_DYNAMIC_PARTITIONS_SIZE := 5901385728
+BOARD_SOMC_DYNAMIC_PARTITIONS_SIZE := 6438256640
 BOARD_SUPER_PARTITION_GROUPS := somc_dynamic_partitions
-BOARD_SUPER_PARTITION_SIZE := 11811160064
+BOARD_SUPER_PARTITION_SIZE := 12884901888
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 TARGET_COPY_OUT_ODM := odm
 TARGET_COPY_OUT_PRODUCT := product
