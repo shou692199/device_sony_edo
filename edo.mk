@@ -24,7 +24,7 @@ $(call inherit-product, vendor/sony/sm8250-common/sm8250-common-vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # Inherit from sony extra stuff
-$(call inherit-product-if-exists, vendor/sony/extra/extra.mk)
+$(call inherit-product-if-exists, vendor/sony/extra-edo/extra.mk)
 
 # VNDK
 PRODUCT_SHIPPING_API_LEVEL := 29
