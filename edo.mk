@@ -540,6 +540,7 @@ PRODUCT_COPY_FILES += \
 
 # XperiaParts
 PRODUCT_PACKAGES += \
+    DolbyTileService \
     XperiaParts
 
 PRODUCT_BUILD_SUPER_PARTITION := false
