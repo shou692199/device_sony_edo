@@ -18,13 +18,13 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Include common vendor stuff
-$(call inherit-product, vendor/sony/sm8250-common/sm8250-common-vendor.mk)
+$(call inherit-product, vendor/sony/edo/edo-vendor.mk)
+
+# Inherit from sony extra
+$(call inherit-product-if-exists, vendor/sony/extra/extra.mk)
 
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
-
-# Inherit from sony extra stuff
-$(call inherit-product-if-exists, vendor/sony/extra/extra.mk)
 
 # VNDK
 PRODUCT_SHIPPING_API_LEVEL := 29
