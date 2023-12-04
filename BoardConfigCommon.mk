@@ -67,6 +67,12 @@ BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_ARCH := arm64
 
+# KernelSU
+TARGET_KERNEL_KSU ?= true
+ifneq ($(TARGET_KERNEL_KSU), true)
+    BOARD_KERNEL_CMDLINE += kernelsu.enabled=0
+endif
+
 # Use External DTC
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc \
