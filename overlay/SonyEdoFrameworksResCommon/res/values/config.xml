@@ -526,5 +526,8 @@
 
     <!-- Default value for performant auth feature. -->
     <bool name="config_performantAuthDefault">true</bool>
+
+    <!-- Led color when battery is medium charged -->
+    <integer name="config_notificationsBatteryMediumARGB">0xFFFF8C00</integer>
 </resources>
 
