@@ -21,9 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, vendor/sony/edo/edo-vendor.mk)
 
 # Inherit from sony extra
-ifeq ($(TARGET_DOLBY),true)
-    $(call inherit-product, vendor/sony/extra-edo/extra.mk)
-endif
+$(call inherit-product, vendor/sony/extra-edo/extra.mk)
 
 # VNDK
 BOARD_API_LEVEL := 29
@@ -523,6 +521,3 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-wfd.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-wfd.xml
 
-# XperiaParts
-PRODUCT_PACKAGES += \
-    XperiaParts
