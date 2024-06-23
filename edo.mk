@@ -23,6 +23,9 @@ $(call inherit-product, vendor/sony/edo/edo-vendor.mk)
 # Inherit from sony extra
 $(call inherit-product, vendor/sony/extra-edo/extra.mk)
 
+# Add common definitions for Qualcomm
+$(call inherit-product, hardware/qcom-caf/common/common.mk)
+
 # VNDK
 BOARD_SHIPPING_API_LEVEL := 29
 PRODUCT_SHIPPING_API_LEVEL := 29
