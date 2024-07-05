@@ -200,10 +200,6 @@ debug.hwui.target_cpu_time_percent=40
 # Keystore
 ro.hardware.keystore_desede=true
 
-# Media
-debug.stagefright.omx_default_rank=0
-debug.stagefright.ccodec=1
-
 # NFC
 ro.camera.notify_nfc=1
 
