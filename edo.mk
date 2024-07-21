@@ -24,9 +24,8 @@ $(call inherit-product, vendor/sony/edo/edo-vendor.mk)
 $(call inherit-product, vendor/sony/extra-edo/extra.mk)
 
 # VNDK
-BOARD_API_LEVEL := 29
-BOARD_SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)
-PRODUCT_SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)
+BOARD_SHIPPING_API_LEVEL := 29
+PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_USE_PRODUCT_VNDK_OVERRIDE := true
 
 # Setup dalvik vm configs
