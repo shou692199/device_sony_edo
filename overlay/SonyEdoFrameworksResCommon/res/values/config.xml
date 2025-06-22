@@ -538,5 +538,11 @@
          2 - custom - Use time range when the device is usually charging for hours
          3 - limit - Just limit charging -->
     <integer name="config_defaultChargingControlMode">2</integer>
+
+    <!-- Whether the device enable the standalone (SA) mode of 5G NR.-->
+    <bool name="config_telephony5gStandalone">true</bool>
+    <!-- Whether the device enable the non-standalone (NSA) mode of 5G NR.-->
+    <bool name="config_telephony5gNonStandalone">true</bool>
+
 </resources>
 
