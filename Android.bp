@@ -10,6 +10,13 @@ cc_library_shared {
     name: "libldacBT_bco",
 }
 
+prebuilt_hidl_interfaces {
+    name: "hidl_swiqi_interface",
+    interfaces: [
+        "vendor.somc.hardware.swiqi@1.0::IHidlSwiqi",
+    ],
+}
+
 install_symlink {
     name: "firmware_wlanmdsp.otaupdate_symlink",
     vendor: true,
