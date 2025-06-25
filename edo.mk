@@ -208,9 +208,7 @@ PRODUCT_PACKAGES += \
 
 # Charger
 PRODUCT_PACKAGES += \
-    vendor.semc.hardware.charger@1.0.vendor \
-    vendor.sony.charger \
-    vendor.sony.charger-service
+    vendor.semc.hardware.charger@1.0.vendor
 
 # Common init scripts
 PRODUCT_PACKAGES += \
@@ -388,15 +386,8 @@ PRODUCT_PACKAGES += \
     vendor_firmware_mnt_mountpoint
 
 # Power
-PRODUCT_PACKAGES += \
-    android.hardware.power-service.sony-libperfmgr
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
-
-# Power Stats
-PRODUCT_PACKAGES += \
-    android.hardware.power.stats
 
 # QMI
 PRODUCT_PACKAGES += \
@@ -482,7 +473,7 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.3-service-qti
+    android.hardware.usb-service.qti
 
 PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/usb/etc
